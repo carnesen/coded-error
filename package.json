@@ -1,6 +1,6 @@
 {
   "name": "@carnesen/coded-error",
-  "description": "JavaScript Error class but with a 'code' property",
+  "description": "An enhanced JavaScript `Error` class with additional properties \"code\" and \"data\"",
   "version": "0.0.0-0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
