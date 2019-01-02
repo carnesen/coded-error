@@ -26,7 +26,7 @@
     "@carnesen/tsconfig": "0.0.1",
     "@carnesen/tslint-config": "0.0.3",
     "@types/jest": "23.3.11",
-    "@types/node": "8.10.39",
+    "@types/node": "6.14.2",
     "jest": "23.6.0",
     "rimraf": "2.6.2",
     "ts-jest": "23.10.5",
@@ -50,5 +50,12 @@
   "bugs": {
     "url": "https://github.com/carnesen/coded-error/issues"
   },
-  "homepage": "https://github.com/carnesen/coded-error#readme"
+  "homepage": "https://github.com/carnesen/coded-error#readme",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "error",
+    "code",
+    "nodejs"
+  ]
 }
