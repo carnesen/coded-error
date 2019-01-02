@@ -12,7 +12,7 @@ $ npm install @carnesen/coded-error
 ```ts
 import { CodedError } from '@carnesen/coded-error';
 
-const err = new CodedError('An error has occurred', 127, { foo: 'bar'});
+const err = new CodedError('An error has occurred', 127, { foo: 'bar' });
 
 console.log(err);
 /*
