@@ -1,12 +1,14 @@
 # coded-error [![Build Status](https://travis-ci.com/carnesen/coded-error.svg?branch=master)](https://travis-ci.com/carnesen/coded-error)
 
-An enhanced `Error` class with additional properties "code" and "data". This package is written in TypeScript and distributed as ES6 JavaScript + .d.ts type declaration files.
+An enhanced `Error` class with additional properties "code" and "data"
 
 ## Install
 
 ```
 $ npm install @carnesen/coded-error
 ```
+The package includes both the runtime JavaScript files suitable for Node.js >=8 as well as the corresponding TypeScript type declarations.
+
 ## Usage
 
 ```ts
@@ -58,7 +60,7 @@ This is the "best practice" modern way of creating an Error object with a "code"
 ## Related
 
 - [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run an async function, `console.log` the resolved/rejected value, and `process.exit`
-- [@carnesen/cli](https://github.com/carnesen/run-and-exit): A library for building Node.js command-line interfaces
+- [@carnesen/cli](https://github.com/carnesen/cli): A library for building Node.js command-line interfaces
 
 ## License
 
