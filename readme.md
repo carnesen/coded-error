@@ -7,7 +7,7 @@ An enhanced `Error` class with additional properties "code" and "data"
 ```
 $ npm install @carnesen/coded-error
 ```
-The package includes both the runtime JavaScript files suitable for Node.js >=8 as well as the corresponding TypeScript type declarations.
+This package includes runtime JavaScript files suitable for Node.js >=8 or a modern non-IE browser as well as the corresponding TypeScript type declarations.
 
 ## Usage
 
