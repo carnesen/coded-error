@@ -57,7 +57,8 @@ This is the "best practice" modern way of creating an Error object with a "code"
 
 ## Related
 
-- [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run an async function, console.log the result, then exit
+- [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run an async function, `console.log` the resolved/rejected value, and `process.exit`
+- [@carnesen/cli](https://github.com/carnesen/run-and-exit): A library for building Node.js command-line interfaces
 
 ## License
 
