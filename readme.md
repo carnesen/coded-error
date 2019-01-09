@@ -1,16 +1,18 @@
 # coded-error [![Build Status](https://travis-ci.com/carnesen/coded-error.svg?branch=master)](https://travis-ci.com/carnesen/coded-error)
 
-An enhanced `Error` class with additional properties "code" and "data". This package is written in TypeScript and distributed as ES6 JavaScript + .d.ts type declaration files.
+An enhanced `Error` class with additional properties "code" and "data"
 
 ## Install
 
 ```
 $ npm install @carnesen/coded-error
 ```
+This package includes runtime JavaScript files suitable for Node.js >=8 or a modern non-IE browser as well as the corresponding TypeScript type declarations.
+
 ## Usage
 
 ```ts
-import { CodedError } from '@carnesen/coded-error';
+import CodedError = require('@carnesen/coded-error');
 
 const err = new CodedError('An error has occurred', 127, { foo: 'bar' });
 
@@ -53,11 +55,18 @@ An arbitrary payload attached to the error object as the "data" property
 
 ## Why?
 
-This is the "best practice" modern way of creating an Error object with a "code" property, all bundled up in a nice lil 100% tested micropackage.
+This is the "best practice" modern way of creating an `Error` object with a "code" property, all bundled up in a nice little micro-package with 100% test coverage.
+
+## More information
+If you encounter any bugs or have any questions or feature requests, please don't hesitate to file an issue or submit a pull request on this project's repository on GitHub.
 
 ## Related
 
-- [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run an async function, console.log the result, then exit
+- [@carnesen/tslint-config](https://github.com/carnesen/tslint-config): TSLint configurations for `@carnesen` projects
+- [@carnesen/tsconfig](https://github.com/carnesen/tsconfig): TypeScript configurations for `@carnesen` projects
+- [@carnesen/cli](https://github.com/carnesen/cli): A library for building Node.js command-line interfaces
+- [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run a function, `console.log` the returned/resolved/thrown/rejected value, and `process.exit`
+- [@carnesen/coded-error](https://github.com/carnesen/coded-error): An enhanced `Error` class with additional properties "code" and "data"
 
 ## License
 

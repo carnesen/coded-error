@@ -1,4 +1,4 @@
-import { CodedError } from '.';
+import CodedError = require('.');
 
 describe('CodedError', () => {
   it('instantiates an object with "message", "code", and "data" properties', () => {
@@ -10,7 +10,7 @@ describe('CodedError', () => {
 
   it('instantiates an object with "stack" property indicating where it was created', () => {
     const err = new CodedError();
-    const creationLocationRegExp = new RegExp(`${__filename}:\\d\\d`);
+    const creationLocationRegExp = /index.test.ts:\d\d/;
     expect(err.stack).toMatch(creationLocationRegExp);
   });
 
