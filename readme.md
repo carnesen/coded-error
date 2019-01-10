@@ -53,10 +53,6 @@ Type: `any`
 
 An arbitrary payload attached to the error object as the "data" property
 
-## Why?
-
-This is the "best practice" modern way of creating an `Error` object with a "code" property, all bundled up in a nice little micro-package with 100% test coverage.
-
 ## More information
 If you encounter any bugs or have any questions or feature requests, please don't hesitate to file an issue or submit a pull request on this project's repository on GitHub.
 
