@@ -1,4 +1,4 @@
-import CodedError = require('.');
+import { CodedError } from '.';
 
 describe('CodedError', () => {
   it('instantiates an object with "message", "code", and "data" properties', () => {

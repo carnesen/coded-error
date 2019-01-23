@@ -12,7 +12,7 @@ This package includes runtime JavaScript files suitable for Node.js >=8 or a mod
 ## Usage
 
 ```ts
-import CodedError = require('@carnesen/coded-error');
+import { CodedError } from '@carnesen/coded-error';
 
 const err = new CodedError('An error has occurred', 127, { foo: 'bar' });
 
@@ -59,10 +59,12 @@ If you encounter any bugs or have any questions or feature requests, please don'
 ## Related
 
 - [@carnesen/tslint-config](https://github.com/carnesen/tslint-config): TSLint configurations for `@carnesen` projects
+
 - [@carnesen/tsconfig](https://github.com/carnesen/tsconfig): TypeScript configurations for `@carnesen` projects
+
 - [@carnesen/cli](https://github.com/carnesen/cli): A library for building Node.js command-line interfaces
+
 - [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run a function, `console.log` the returned/resolved/thrown/rejected value, and `process.exit`
-- [@carnesen/coded-error](https://github.com/carnesen/coded-error): An enhanced `Error` class with additional properties "code" and "data"
 
 ## License
 

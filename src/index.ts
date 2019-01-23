@@ -1,4 +1,4 @@
-class CodedError extends Error {
+export class CodedError extends Error {
   public readonly code?: any;
   public readonly data?: any;
   constructor(message?: string, code?: any, data?: any) {
@@ -15,5 +15,3 @@ class CodedError extends Error {
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
-
-export = CodedError;
