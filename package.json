@@ -1,60 +1,62 @@
 {
-  "name": "@carnesen/coded-error",
-  "description": "An enhanced JavaScript `Error` class with additional properties \"code\" and \"data\"",
-  "version": "0.1.1",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "scripts": {
-    "build": "tsc --project tsconfig.build.json",
-    "build:clean": "rimraf lib && npm run build",
-    "build:watch": "npm run build -- --watch",
-    "example": "node example.js",
-    "lint": "tslint --project .",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "npm run lint && npm run test:unit && npm run build:clean && npm run example",
-    "test:unit": "jest src",
-    "test:unit:coverage": "npm run test:unit -- --coverage",
-    "test:unit:watch": "npm run test:unit -- --watch",
-    "preversion": "npm test",
-    "postversion": "npm publish"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@carnesen/tsconfig": "0.1.0",
-    "@carnesen/tslint-config": "0.1.2",
-    "@types/jest": "24.0.23",
-    "jest": "24.9.0",
-    "rimraf": "3.0.0",
-    "ts-jest": "24.2.0",
-    "ts-node": "8.5.4",
-    "tslint": "5.20.1",
-    "typescript": "3.7.2"
-  },
-  "files": [
-    "src",
-    "lib"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Chris Arnesen",
-    "email": "chris.arnesen@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/carnesen/coded-error.git"
-  },
-  "bugs": {
-    "url": "https://github.com/carnesen/coded-error/issues"
-  },
-  "homepage": "https://github.com/carnesen/coded-error#readme",
-  "keywords": [
-    "typescript",
-    "javascript",
-    "error",
-    "code",
-    "nodejs"
-  ]
+	"name": "@carnesen/coded-error",
+	"description": "An enhanced JavaScript `Error` class with additional properties \"code\" and \"data\"",
+	"version": "0.2.0",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"engines": {
+		"node": ">=8.0.0"
+	},
+	"scripts": {
+		"build": "tsc --project tsconfig.build.json",
+		"build:clean": "rimraf lib && npm run build",
+		"build:watch": "npm run build -- --watch",
+		"example": "node example.js",
+		"lint": "eslint --ext .js,.ts src/",
+		"lint:fix": "npm run lint -- --fix",
+		"test": "npm run lint && npm run test:unit && npm run build:clean && npm run example",
+		"test:unit": "jest src",
+		"test:unit:coverage": "npm run test:unit -- --coverage",
+		"test:unit:watch": "npm run test:unit -- --watch",
+		"preversion": "npm test",
+		"postversion": "npm publish"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@carnesen/tsconfig": "0.4.0",
+		"@carnesen/tslint-config": "0.2.0",
+		"@types/jest": "26.0.9",
+		"eslint": "7.6.0",
+		"eslint-config-carnesen": "4.4.0",
+		"jest": "26.2.2",
+		"rimraf": "3.0.2",
+		"ts-jest": "26.1.4",
+		"ts-node": "8.10.2",
+		"tslint": "6.1.3",
+		"typescript": "3.9.7"
+	},
+	"files": [
+		"src",
+		"lib"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Chris Arnesen",
+		"email": "chris.arnesen@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/carnesen/coded-error.git"
+	},
+	"bugs": {
+		"url": "https://github.com/carnesen/coded-error/issues"
+	},
+	"homepage": "https://github.com/carnesen/coded-error#readme",
+	"keywords": [
+		"typescript",
+		"javascript",
+		"error",
+		"code",
+		"nodejs"
+	]
 }
