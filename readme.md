@@ -1,17 +1,19 @@
-# coded-error [![Build Status](https://travis-ci.com/carnesen/coded-error.svg?branch=master)](https://travis-ci.com/carnesen/coded-error)
+# **@carnesen/coded-error**
 
-An enhanced `Error` class with additional properties "code" and "data"
+An `Error` class with additional properties "code" and "data". Custom errors are harder than you might think in TypeScript :)
+
+[![build status badge](https://github.com/carnesen/coded-error/workflows/test/badge.svg)](https://github.com/carnesen/coded-error/actions?query=workflow%3Atest+branch%3Amaster) [![npm version badge](https://badge.fury.io/js/%40carnesen%2Fcoded-error.svg)](https://www.npmjs.com/package/@carnesen/coded-error) [![github stars badge](https://img.shields.io/github/stars/carnesen/coded-error)](https://github.com/carnesen/coded-error)
 
 ## Install
 
 ```
 $ npm install @carnesen/coded-error
 ```
-This package includes runtime JavaScript files suitable for Node.js >=8 or a modern non-IE browser as well as the corresponding TypeScript type declarations.
+This package includes runtime JavaScript files (ES2015) and the corresponding TypeScript type declarations.
 
 ## Usage
 
-```ts
+```typescript
 import { CodedError } from '@carnesen/coded-error';
 
 const err = new CodedError('An error has occurred', 127, { foo: 'bar' });
@@ -32,39 +34,14 @@ console.log(err);
 */
 ```
 ## API
-
-### new CodedError(message, code, data)
-
-#### message
-
-Type: `string` (optional)
-
-An error message passed into the native `Error` constructor
-
-#### code
-
-Type: `any`
-
-An error code attached to the resulting error object
-
-#### data
-
-Type: `any`
-
-An arbitrary payload attached to the error object as the "data" property
+The constructor signature is:
+```typescript
+new CodedError(message: string, code: any, data: any);
+```
+This creates an object with properties `message`, `code`, and `data`. Besides that there's not much to know!
 
 ## More information
-If you encounter any bugs or have any questions or feature requests, please don't hesitate to file an issue or submit a pull request on this project's repository on GitHub.
-
-## Related
-
-- [@carnesen/tslint-config](https://github.com/carnesen/tslint-config): TSLint configurations for `@carnesen` projects
-
-- [@carnesen/tsconfig](https://github.com/carnesen/tsconfig): TypeScript configurations for `@carnesen` projects
-
-- [@carnesen/cli](https://github.com/carnesen/cli): A library for building Node.js command-line interfaces
-
-- [@carnesen/run-and-exit](https://github.com/carnesen/run-and-exit): Run a function, `console.log` the returned/resolved/thrown/rejected value, and `process.exit`
+If you encounter any bugs or have any questions or feature requests, please don't hesitate to file an issue or submit a pull request on [this project's repository on GitHub](https://github.com/carnesen/coded-error).
 
 ## License
 
