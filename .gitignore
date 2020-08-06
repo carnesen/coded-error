@@ -1,5 +1,9 @@
 ### Node ###
 
+# Package tarball
+*.tgz
+
+# Coverage reports
 /coverage
 
 # Logs
