@@ -22,6 +22,5 @@ export class CodedError extends Error {
 		if (typeof this.stack === 'string') {
 			this.stack = `${this.stack}\n`;
 		}
-		Object.setPrototypeOf(this, new.target.prototype);
 	}
 }
