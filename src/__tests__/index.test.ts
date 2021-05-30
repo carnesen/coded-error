@@ -18,4 +18,10 @@ describe('CodedError', () => {
 		const err = new CodedError();
 		expect(err.name).toBe('Error');
 	});
+
+	it('has the correct instanceof behavior', () => {
+		const err = new CodedError();
+		expect(err instanceof CodedError).toBe(true);
+		expect(err instanceof Error).toBe(true);
+	});
 });

@@ -18,17 +18,17 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@carnesen/tsconfig": "0.4.0",
+		"@carnesen/tsconfig": "0.4.1",
 		"@carnesen/tslint-config": "0.2.0",
-		"@types/jest": "26.0.9",
-		"eslint": "7.6.0",
-		"eslint-config-carnesen": "4.4.0",
-		"jest": "26.2.2",
+		"@types/jest": "26.0.23",
+		"eslint": "7.27.0",
+		"eslint-config-carnesen": "5.0.0",
+		"jest": "27.0.3",
 		"rimraf": "3.0.2",
-		"ts-jest": "26.1.4",
-		"ts-node": "8.10.2",
+		"ts-jest": "27.0.1",
+		"ts-node": "10.0.0",
 		"tslint": "6.1.3",
-		"typescript": "3.9.7"
+		"typescript": "4.3.2"
 	},
 	"files": [
 		"src",
