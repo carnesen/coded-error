@@ -2,6 +2,8 @@
 
 ## Upcoming
 
+## v0.4.0 (2021-10-30)
+
 - Added: Official support for Node.js v16
 
 - Breaking: Drop official support for Node.js v10
