@@ -1,6 +1,6 @@
 # **@carnesen/coded-error**
 
-An `Error` class with additional properties "code" and "data". Custom errors are harder than you might think in TypeScript :)
+An `Error` class with additional properties "code" and "data"
 
 [![build status badge](https://github.com/carnesen/coded-error/workflows/test/badge.svg)](https://github.com/carnesen/coded-error/actions?query=workflow%3Atest+branch%3Amaster) [![npm version badge](https://badge.fury.io/js/%40carnesen%2Fcoded-error.svg)](https://www.npmjs.com/package/@carnesen/coded-error) [![github stars badge](https://img.shields.io/github/stars/carnesen/coded-error)](https://github.com/carnesen/coded-error)
 
@@ -20,7 +20,7 @@ const err = new CodedError('An error has occurred', 127, { foo: 'bar' });
 
 console.log(err);
 /*
-{ Error: An error has occurred
+{ CodedError: An error has occurred
     at Object.<anonymous> (/Users/carnesen/GitHub/coded-error/example.js:3:13)
     at Module._compile (module.js:653:30)
     at Object.Module._extensions..js (module.js:664:10)
